@@ -1,0 +1,6 @@
+Spanish language pack for visual studio code
+Live Server
+HTML CSS Support
+Sublime Text Keymap and settings importer (si vienes de sublime text)
+Google Fonts
+Better Comments
