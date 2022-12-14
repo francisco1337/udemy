@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body{
+            background: #fff;
+        }
+
+        .card{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background: #fff;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px;
+            transition: all 0.5s;
+        }
+
+        .img{
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .img img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           object-position: center;            
+        }
+
+        h2{
+            font-size: 20px;
+            color: #262626;
+        }
+
+        h2 span{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="/img/profile.jpg" alt="">
+        </div>
+        <h2>lorem ipsum<br><span>Frontend web developer</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis deserunt temporibus ab obcaecati numquam voluptates, error provident minus iusto magni aspernatur eos laborum! Quam molestiae similique quod suscipit fuga.</p>
+        <ul>
+            <li href="#" class="fab fa-facebook"></li>
+            <li href="#" class="fab fa-twitter"></li>
+            <li href="#" class="fab fa-instagram"></li>
+            <li href="#" class="fab fa-youtube"></li>
+            <li href="#" class="fab fa-linkedin-in"></li>
+        </ul>
+    </div>
+</body>
+</html>
