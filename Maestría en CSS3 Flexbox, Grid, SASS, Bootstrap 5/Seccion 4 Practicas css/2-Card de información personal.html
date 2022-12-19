@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+
     <style>
         *{
             margin: 0;
@@ -31,6 +33,10 @@
             transition: all 0.5s;
         }
 
+        .card:hover{
+            box-shadow: 0 20px 70px rgba(0, 0, 0, 0.5);
+        }
+
         .img{
             width: 120px;
             height: 120px;
@@ -51,9 +57,40 @@
             color: #262626;
         }
 
-        h2 span{
+        span{
+            font-size: 14px;
+            background: #406ff0;
+            color: #fff;
+            padding: 5px 10px;  
+            border-radius: 15px;  
+        }
+
+        p{
+            color:#262626;
+            margin: 20px 0;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
             
         }
+
+        ul li a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color:#AAA;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: all .5s;
+        }
+
+        ul li a:hover{
+            color:#406ff0;
+            transform: rotatey(360deg);
+        }
+
     </style>
 </head>
 <body>
@@ -64,11 +101,11 @@
         <h2>lorem ipsum<br><span>Frontend web developer</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis deserunt temporibus ab obcaecati numquam voluptates, error provident minus iusto magni aspernatur eos laborum! Quam molestiae similique quod suscipit fuga.</p>
         <ul>
-            <li href="#" class="fab fa-facebook"></li>
-            <li href="#" class="fab fa-twitter"></li>
-            <li href="#" class="fab fa-instagram"></li>
-            <li href="#" class="fab fa-youtube"></li>
-            <li href="#" class="fab fa-linkedin-in"></li>
+            <li ><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li ><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li ><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li ><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li ><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
     </div>
 </body>
