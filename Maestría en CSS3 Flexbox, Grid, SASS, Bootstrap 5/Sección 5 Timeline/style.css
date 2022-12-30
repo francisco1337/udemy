@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/** Generales */
+:root{
+    --color-principal: #41eb41;
+    --color-sombra: rgba(65,235,65,0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    cursor: default;
+}
+
+/** Contenedor de timeline */
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+/*? Elementos de lista */
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+
+}
+
+/** Circulo indicador */
+.timeline ul li::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    background: var(--color-principal);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--color-sombra);
+}
+
+.timeline ul li:nth-child(odd)::before{
+    
+}
