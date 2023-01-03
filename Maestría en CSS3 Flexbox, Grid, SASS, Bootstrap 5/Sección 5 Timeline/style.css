@@ -65,5 +65,50 @@
 }
 
 .timeline ul li:nth-child(odd)::before{
-    
+    right: -6px;
+}
+
+.timeline ul li:nth-child(even)::before{
+    left: -4px;
+}
+
+/** CONTENIDO */
+.content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li h3{
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+
+.timeline ul li p{
+    margin: 10px 0 0 ;
+}
+
+/** FECHA */
+.time{
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    padding: 8px 15px;
+    background: #41eb41;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px var(--color-principal);
+    transition: all .5s;
+}
+
+
+.timeline ul li:nth-child(odd) .time{
+    right: -145px;
+}
+
+.timeline ul li:nth-child(even) .time{
+    left: -145px;
+}
+
+.timeline ul li:hover .time{
+    transform: scale(1.1);
 }
