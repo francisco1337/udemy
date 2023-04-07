@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/** VARIABLES */
+:root{
+     --color-primario: #0d6efd;
+     --color-secundario: #0b5ed7;
+     --color-obscuro: #122936; 
+}
+
+
+/** GENERALES */
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+     text-decoration: none;
+     font-size: 14px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: 700;
+}
